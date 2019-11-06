@@ -49,10 +49,8 @@ class MapsActivity : FragmentActivity(), OnMapReadyCallback  {
     fun getSunset(){
         print("--------------------------------2--------------------------------------------")
         var city= "orizaba"
-        //val url="link de la api"
-        val url="https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22$city%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys"
-        //MyAsyncTask().execute("https://compact-booking-253415.appspot.com/gamesystems")
-        //MyAsyncTask().execute("link de la api")
+        val url="https://upheld-castle-251021.appspot.com/entidades"
+        //val url ="link de la api"
         MyAsyncTask().execute(url)
     }
 
