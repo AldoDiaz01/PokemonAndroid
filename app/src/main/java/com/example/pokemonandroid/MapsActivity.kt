@@ -39,7 +39,6 @@ class MapsActivity : FragmentActivity(), OnMapReadyCallback  {
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         val mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
-        print("-------------------------------1------------------------------------------------")
         checkPermission()
         loadPokemon()
         getSunset()
@@ -47,9 +46,8 @@ class MapsActivity : FragmentActivity(), OnMapReadyCallback  {
 
 
     fun getSunset(){
-        print("--------------------------------2--------------------------------------------")
         var city= "orizaba"
-        val url="https://upheld-castle-251021.appspot.com/entidades"
+        val url="https://compact-booking-253415.appspot.com/pokemons"
         //val url ="link de la api"
         MyAsyncTask().execute(url)
     }
